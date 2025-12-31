@@ -21,7 +21,6 @@ RUN useradd -m -s /bin/bash jenkins
 
 # Add jenkins user to docker group
 RUN usermod -aG docker jenkins
-RUN usermod -aG docker ubuntu
 
 # Set workspace
 WORKDIR /home/jenkins
